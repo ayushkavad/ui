@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
-
+import SideBar from '@/components/SideBarComponent'
 const inter = Inter({ subsets: ['latin'] })
+import '../globals.css'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,16 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className={inter.className} style={{ display: 'flex', fontFamily: 'Open Sans, sans-serif' }}>
+      <body className={inter.className} style={{ display: 'flex' }}>
+        <SideBar />
         {children}
       </body>
     </html>
   )
 }
-
