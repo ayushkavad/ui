@@ -20,7 +20,10 @@ function SideBar() {
                 alt="r"
               />
             </div>
-            <p className="text-slate-100 font-semibold">View Profile</p>
+            <div className="flex flex-col">
+              <p className="text-slate-100 text-sm font-semibold">Anya Rose</p>
+              <p className="text-gray-600 text-[12px]">@anyarose</p>
+            </div>
           </div>
         </Link>
         <Link href="/">
@@ -37,12 +40,14 @@ function SideBar() {
             <p className="text-slate-100">Explore</p>
           </div>
         </div>
-        <div className="p-2 m-4 rounded-md hover:bg-[#333]">
-          <div className="flex justify-start items-center gap-2 text-slate-100 ">
-            <AiOutlineHeart style={{ height: '25px', width: '25px' }} />
-            <p className="text-slate-100">Likes</p>
+        <Link href="/activity">
+          <div className="p-2 m-4 rounded-md hover:bg-[#333]">
+            <div className="flex justify-start items-center gap-2 text-slate-100 ">
+              <AiOutlineHeart style={{ height: '25px', width: '25px' }} />
+              <p className="text-slate-100">Likes</p>
+            </div>
           </div>
-        </div>
+        </Link>
         <div className="p-2 m-4 rounded-md hover:bg-[#333]">
           <div className="flex justify-start items-center gap-2 text-slate-100 ">
             <AiOutlinePlusCircle style={{ height: '25px', width: '25px' }} />

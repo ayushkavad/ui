@@ -14,7 +14,7 @@ export default function Profile() {
         </div>
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-4">
-            <p className="text-xl">helloworld</p>
+            <p className="text-xl font-semibold">Anya Rose</p>
             <button className="text-sm text-white p-2 font-semibold rounded-md bg-[#111] hover:bg-[#222] focus:outline-none focus:ring focus:border-blue-300">
               Edit profile
             </button>
